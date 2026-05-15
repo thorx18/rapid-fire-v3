@@ -1,0 +1,6 @@
+<div style="display:flex; justify-content:space-between; align-items:center; background:#111; color:white; padding:12px 16px; margin:-20px -20px 24px -20px; border-radius:0;">
+  <span style="font-size:18px; font-weight:bold;">Edit task</span>
+  <%= link_to "Go back", tasks_path,
+      style: "background:#6abf2e; color:white; padding:6px 14px; border-radius:3px; text-decoration:none; font-size:13px;" %>
+</div>
+<%= render "form", task: @task %>
