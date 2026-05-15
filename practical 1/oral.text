@@ -1,0 +1,222 @@
+1. What is Data Visualization?
+Answer:
+
+Data Visualization is the graphical representation of data using charts, graphs, and plots.
+It helps in:
+
+understanding data easily
+identifying patterns and trends
+comparing values visually
+making better decisions from data analysis
+2. Why is Data Visualization Important?
+Answer:
+
+Data Visualization is important because:
+
+it simplifies complex data
+helps detect trends and relationships
+improves analysis and understanding
+makes data more interactive and meaningful
+supports decision-making processes
+3. Which libraries were used in this practical?
+Answer:
+
+The following Python libraries were used:
+
+Pandas → for data handling and analysis
+Matplotlib → for graph plotting
+Seaborn → for advanced statistical visualization
+4. What is Pandas?
+Answer:
+
+Pandas is a Python library used for:
+
+data manipulation
+data analysis
+handling tabular datasets
+
+It works mainly with DataFrames and CSV files.
+
+5. What is a DataFrame?
+Answer:
+
+A DataFrame is a two-dimensional tabular data structure in Pandas consisting of rows and columns, similar to an Excel sheet or database table.
+
+6. What is CSV?
+Answer:
+
+CSV stands for Comma Separated Values.
+It is a file format used to store tabular data in rows and columns.
+
+7. What does read_csv() do?
+df = pd.read_csv("students.csv")
+Answer:
+
+read_csv() reads the CSV dataset file and converts it into a Pandas DataFrame for analysis.
+
+8. What is df?
+Answer:
+
+df is a variable name commonly used for storing a DataFrame.
+
+9. What is the use of head()?
+df.head()
+Answer:
+
+head() displays the first 5 rows of the dataset.
+
+10. What is the use of info()?
+Answer:
+
+info() displays:
+
+column names
+datatypes
+number of non-null values
+dataset structure
+11. What is the use of describe()?
+Answer:
+
+describe() provides statistical summary such as:
+
+mean
+minimum value
+maximum value
+standard deviation
+count
+12. What is Matplotlib?
+Answer:
+
+Matplotlib is a Python plotting library used for creating graphs, charts, and visualizations.
+
+13. What is Seaborn?
+Answer:
+
+Seaborn is a statistical visualization library in Python built on top of Matplotlib.
+It provides attractive and advanced graphical visualizations with simpler syntax.
+
+14. Difference Between Matplotlib and Seaborn
+Matplotlib	Seaborn
+Basic plotting library	Advanced visualization library
+More manual coding	Easier and cleaner syntax
+Simple graphs	Statistical and attractive graphs
+15. Why are Matplotlib and Seaborn used together?
+Answer:
+
+Seaborn is used for creating advanced visualizations, while Matplotlib is used for graph customization such as:
+
+title
+labels
+figure size
+displaying graphs
+16. What is a Scatter Plot?
+Answer:
+
+A Scatter Plot is used to show the relationship between two numerical variables.
+
+17. What is a Histogram?
+Answer:
+
+A Histogram shows the frequency distribution of continuous data.
+
+18. What is a Bar Plot?
+Answer:
+
+A Bar Plot is used to compare values between different categories.
+
+19. What is a Box Plot?
+Answer:
+
+A Box Plot displays:
+
+median
+quartiles
+outliers
+data distribution
+20. What is a Violin Plot?
+Answer:
+
+A Violin Plot combines:
+
+box plot
+density distribution
+
+to show data spread and distribution shape.
+
+21. What is a Heatmap?
+Answer:
+
+A Heatmap is a graphical representation of correlation between variables using color intensity.
+
+22. What is Correlation?
+Answer:
+
+Correlation represents the relationship between two variables.
+
+Positive correlation → both increase together
+Negative correlation → one increases while other decreases
+23. What is Pairplot?
+Answer:
+
+Pairplot compares multiple numerical variables together using pairwise graphs.
+
+24. What is hue in Seaborn?
+hue='Result'
+Answer:
+
+hue is used to differentiate categories using different colors.
+
+25. What is palette?
+Answer:
+
+palette is used to define the color theme of the graph.
+
+26. What is KDE?
+kde=True
+Answer:
+
+KDE stands for Kernel Density Estimation.
+It is used to display a smooth probability distribution curve.
+
+27. Why is plt.show() used?
+Answer:
+
+plt.show() is used to display the graph output on the screen.
+
+28. Explain the practical flow.
+Answer:
+
+In this practical:
+
+We imported Pandas, Matplotlib, and Seaborn libraries.
+Loaded the dataset using read_csv().
+Analyzed the dataset using Pandas functions like:
+head()
+info()
+describe()
+Created visualizations such as:
+scatter plots
+histograms
+bar plots
+box plots
+heatmaps
+Finally analyzed relationships, trends, and distributions in the dataset.
+29. Which dataset was used?
+Answer:
+
+A Student Performance Dataset containing:
+
+attendance
+study hours
+marks
+practical marks
+result status
+30. What did you analyze from the dataset?
+Answer:
+
+We analyzed:
+
+relationship between study hours and marks
+attendance distribution
+pass/fail comparison
+overall student performance trends

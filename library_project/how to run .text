@@ -1,0 +1,16 @@
+
+# folder structure creation 
+python -m django startproject library_project; cd library_project; python manage.py startapp catalog; mkdir templates; ni templates\index.html, templates\books.html, templates\authors.html, templates\borrowed.html
+
+// actual folder path 
+cd "C:\Users\adity\Downloads\atl practical\library_project"
+
+// commands
+
+del catalog\migrations\0001_initial.py
+del db.sqlite3
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+
