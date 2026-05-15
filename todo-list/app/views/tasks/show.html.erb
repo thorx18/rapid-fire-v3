@@ -1,0 +1,11 @@
+<h1>Task Details</h1>
+
+<p><%= notice %></p>
+
+<p>Title: <%= @task.title %></p>
+<p>Status: <%= @task.completed ? "✅ Completed" : "❌ Pending" %></p>
+
+<%= link_to "Edit", edit_task_path(@task) %>
+<%= link_to "Back", tasks_path %>
+<%= button_to "Delete", @task, method: :delete,
+    data: { turbo_confirm: "Are you sure?" } %>

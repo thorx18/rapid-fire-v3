@@ -1,0 +1,37 @@
+<%= form_with(model: task) do |form| %>
+
+  <% if task.errors.any? %>
+    <p style="color:red;"><%= pluralize(task.errors.count, "error") %> prohibited this task from being saved:</p>
+    <ul>
+      <% task.errors.full_messages.each do |msg| %>
+        <li style="color:red;"><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <table style="margin: 0 auto;">
+    <tr>
+      <td style="padding:8px; text-align:right;">Task</td>
+      <td style="padding:8px;"><%= form.text_field :title, style: "padding:6px; width:200px; border:1px solid #ccc;" %></td>
+    </tr>
+    <tr>
+      <td style="padding:8px; text-align:right;">Details</td>
+      <td style="padding:8px;"><%= form.text_area :details, style: "padding:6px; width:200px; height:60px; border:1px solid #ccc;" %></td>
+    </tr>
+    <tr>
+      <td style="padding:8px; text-align:right;">Due date</td>
+      <td style="padding:8px;"><%= form.date_field :due_date, style: "padding:6px; width:200px; border:1px solid #ccc;" %></td>
+    </tr>
+    <tr>
+      <td style="padding:8px; text-align:right;">Completed</td>
+      <td style="padding:8px;"><%= form.check_box :completed %></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align:center; padding-top:12px;">
+        <%= form.submit "Create Task",
+            style: "background:#6abf2e; color:white; border:none; padding:8px 24px; border-radius:3px; cursor:pointer; font-size:14px;" %>
+      </td>
+    </tr>
+  </table>
+
+<% end %>
