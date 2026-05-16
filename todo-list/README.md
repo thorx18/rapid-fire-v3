@@ -1,24 +1,20 @@
-# README
+# Step 1 — Install Rails
+gem install rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Step 2 — Create new Rails app
+rails new todo-list
 
-Things you may want to cover:
+# Step 3 — Go into the folder
+cd todo-list
 
-* Ruby version
+# Step 4 — Generate Task model
+rails generate model Task title:string details:text due_date:date completed:boolean
 
-* System dependencies
+# Step 5 — Generate Tasks controller
+rails generate controller Tasks index show new edit
 
-* Configuration
+# Step 6 — Run database migration
+rails db:migrate
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Step 7 — Start the server
+rails server
